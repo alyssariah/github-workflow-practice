@@ -2,7 +2,7 @@ name: Consumer Workflow
 
 on:
   workflow_run:
-    workflows: ["Producer Workflow"]
+    workflows: ["Build and Deploy DEVELOP"]
     types:
       - completed
 
