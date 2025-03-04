@@ -1,0 +1,16 @@
+name: Build and Deploy DEVELOP
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  generate-output:
+    runs-on: ubuntu-latest
+    outputs:
+      my_variable: ${{ steps.set-output.outputs.value }}  # Output the variable
+    steps:
+      - name: Generate value
+        id: set-output
+        run: echo "value=Hello from Producer" >> $GITHUB_ENV
