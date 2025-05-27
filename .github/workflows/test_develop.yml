@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print output from previous workflow
-        run: echo `${{ github.event.workflow_run.outputs.my_variable }}`
+        run: echo ${{ github.event.workflow_run.outputs.my_variable }}
