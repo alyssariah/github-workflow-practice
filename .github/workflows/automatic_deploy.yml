@@ -52,7 +52,7 @@ jobs:
         run: |
           echo "Current commit SHA: ${{ steps.get-current-sha.outputs.deploy_sha }}"
 
-          CHANGED_FILES=$(git diff --name-only 132a403d6941eb21e08d6ad40844ff3a334d4fc4)
+          CHANGED_FILES=$(git diff --name-only 132a403d6941eb21e08d6ad40844ff3a334d4fc4 HEAD)
           echo "Changed files:"
           echo "$CHANGED_FILES"
 
