@@ -19,7 +19,6 @@ permissions:
 jobs:
   check_changes:
     runs-on: ubuntu-latest
-    environment: DEVELOP
 
     steps:
       - name: Checkout code
